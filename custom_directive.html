@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	  <meta charset="utf-8"/>
+	  <title>Document</title>
+	  <script src="lib/angular.js"></script>
+	  <script>
+	  	angular.module("myapp",[]).directive("ngRajani", function(){
+	  		return {
+	  			replace : true,
+	  			restrict : "EACM",
+	  			templateUrl : "app/view/rajani.html"
+	  		}
+	  	});
+	  </script>
+	</head>
+	<body ng-app="myapp">
+		
+	  <div ng-rajani></div>
+	  <ng-rajani></ng-rajani>
+	  <div class="ng-rajani"></div>
+	  <!-- directive:ng-rajani -->
+	  
+	</body>
+</html>
